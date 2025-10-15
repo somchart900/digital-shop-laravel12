@@ -4,9 +4,9 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Http\Middleware\TrustProxies as Middleware;
 
-class TrustProxies
+class TrustProxies extends Middleware
 {
     /**
      * Handle an incoming request.
